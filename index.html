@@ -5,144 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maia Buljeta-Fuchs | Creative Coach</title>
     <style>
-        /* CSS Styles */
+        /* General Reset */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
         }
 
+        /* Body Styling */
         body {
-            font-family: Arial, sans-serif;
             background: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
+        /* Header */
         header {
-            background: #333;
+            background: #111;
             color: #fff;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
+            font-size: 1.5rem;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-
+        /* Hero Section */
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?creative,coaching') center/cover no-repeat;
+            background: url('https://source.unsplash.com/1600x900/?inspiration,success') center/cover no-repeat;
             color: #fff;
             text-align: center;
-            padding: 100px 20px;
-            margin-bottom: 20px;
+            padding: 120px 20px;
+            margin-bottom: 40px;
         }
 
         .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            font-weight: bold;
         }
 
         .hero p {
             font-size: 1.2rem;
             max-width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 20px;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background: #ff6347;
+        .hero .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #ff6347;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .hero .btn:hover {
+            background-color: #ff4500;
         }
 
+        /* Section Styling */
         .section {
-            padding: 40px 0;
+            padding: 60px 0;
+            text-align: center;
         }
 
         .section h3 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
-            text-align: center;
+            font-weight: bold;
+            color: #333;
         }
 
         .section p {
             max-width: 700px;
             margin: 10px auto;
-            text-align: center;
             font-size: 1.1rem;
+            color: #555;
         }
 
+        /* Services */
         .services, .testimonials {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
             justify-content: space-around;
         }
 
         .service, .testimonial {
             background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
+            border-radius: 10px;
+            padding: 30px;
             width: 30%;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
 
         .service h4, .testimonial h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
             color: #333;
-            margin-bottom: 10px;
         }
 
+        /* Contact Form */
         .contact-form {
             max-width: 600px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 30px;
             background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            text-align: left;
         }
 
         .contact-form label {
             display: block;
-            margin: 10px 0 5px;
+            margin: 15px 0 5px;
             font-weight: bold;
+            font-size: 1rem;
+            color: #333;
         }
 
         .contact-form input, .contact-form textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            font-size: 1rem;
         }
 
         .contact-form button {
             display: block;
             width: 100%;
-            padding: 10px;
-            background: #333;
+            padding: 15px;
+            background: #111;
             color: #fff;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
             border: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
 
-        footer {
+        .contact-form button:hover {
             background: #333;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        
+        /* Success Message Styling */
+        .success-message {
+            display: none;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #28a745;
             margin-top: 20px;
         }
     </style>
@@ -156,15 +183,15 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <h2>Transform Your Creative Vision into Reality</h2>
-        <p>Unlock your potential, break through creative blocks, and build a life of meaning and fulfillment with personalized coaching that understands the soul of creativity.</p>
+        <h2>Unleash Your Creative Potential</h2>
+        <p>Take your vision to new heights with personalized coaching that brings out your best self.</p>
         <a href="#contact" class="btn">Book Your Free Discovery Call</a>
     </div>
 
     <!-- About Section -->
     <div class="container section">
         <h3>About Me</h3>
-        <p>I'm Maia, a creative coach dedicated to helping you find your voice, overcome obstacles, and cultivate a fulfilling creative life. With a background in filmmaking and transformative storytelling, I bring practical strategies and emotional insight to help you excel.</p>
+        <p>I'm Maia, a creative coach committed to guiding you through blocks and building a fulfilling creative journey. With a background in filmmaking, I offer insights and strategies to help you thrive.</p>
     </div>
 
     <!-- Services Section -->
@@ -172,35 +199,35 @@
         <h3>What I Offer</h3>
         <div class="services">
             <div class="service">
-                <h4>Overcome Creative Blocks</h4>
-                <p>Get to the root of what's holding you back and find powerful strategies to break through barriers, cultivate joy, and achieve clarity.</p>
+                <h4>Break Through Creative Blocks</h4>
+                <p>Find strategies to overcome barriers, build confidence, and rediscover joy.</p>
             </div>
             <div class="service">
                 <h4>Boost Your Confidence</h4>
-                <p>Gain the confidence to take creative risks and make impactful decisions, both in your work and personal life.</p>
+                <p>Take bold steps in your creative journey with greater clarity and assurance.</p>
             </div>
             <div class="service">
-                <h4>Goal Setting & Accountability</h4>
-                <p>Set meaningful goals and create actionable steps, all while staying motivated and accountable to your own creative vision.</p>
+                <h4>Set & Achieve Goals</h4>
+                <p>Define meaningful goals with a plan to stay motivated and accountable.</p>
             </div>
         </div>
     </div>
 
     <!-- Testimonials Section -->
     <div class="container section" id="testimonials">
-        <h3>What My Clients Say</h3>
+        <h3>Client Success Stories</h3>
         <div class="testimonials">
             <div class="testimonial">
-                <h4>“Life-Changing Insights”</h4>
-                <p>"Maia's coaching helped me find clarity and purpose. I never thought I could overcome my blocks and feel so free creatively." - Alex T.</p>
+                <h4>"Transformative Experience"</h4>
+                <p>“Maia's coaching is a game-changer. I’ve grown creatively and personally thanks to her insights.” - Alex T.</p>
             </div>
             <div class="testimonial">
-                <h4>“Unmatched Support”</h4>
-                <p>"With Maia’s guidance, I finally feel like I can achieve my goals. Her support and encouragement are truly invaluable." - Sarah K.</p>
+                <h4>"Unwavering Support"</h4>
+                <p>“Maia helped me navigate challenges with patience and encouragement.” - Sarah K.</p>
             </div>
             <div class="testimonial">
-                <h4>“A True Partner in My Growth”</h4>
-                <p>"Working with Maia was one of the best decisions I made for my creativity and career. I recommend her to anyone seeking genuine growth." - Mark L.</p>
+                <h4>"A Real Partner"</h4>
+                <p>“Working with Maia has been invaluable in my creative journey. She’s insightful and truly invested.” - Mark L.</p>
             </div>
         </div>
     </div>
@@ -208,7 +235,7 @@
     <!-- Contact Section -->
     <div class="container section" id="contact">
         <h3>Contact Me</h3>
-        <form action="https://formsubmit.co/maiabuljeta@gmail.com" method="POST" method="POST" enctype="text/plain" class="contact-form">
+        <form action="https://formsubmit.co/maiabuljeta@gmail.com" method="POST" class="contact-form" onsubmit="showSuccessMessage(event)">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
             
@@ -220,6 +247,9 @@
             
             <button type="submit">Send Message</button>
         </form>
+        <div class="success-message" id="success-message">
+            Thank you! Your message has been sent successfully.
+        </div>
     </div>
 
     <!-- Footer -->
@@ -227,5 +257,12 @@
         <p>© 2024 Maia Buljeta-Fuchs | Creative Coach. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault();
+            document.getElementById('success-message').style.display = 'block';
+            document.querySelector('.contact-form').reset();
+        }
+    </script>
 </body>
 </html>
