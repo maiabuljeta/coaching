@@ -28,15 +28,17 @@
             padding: 30px 0;
             text-align: center;
             font-size: 1.5rem;
+            animation: fadeInDown 1s ease-out;
         }
 
         /* Hero Section */
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?inspiration,success') center/cover no-repeat;
+            background: rgba(0, 0, 0, 0.7) url('https://source.unsplash.com/1600x900/?inspiration,success') center/cover no-repeat;
             color: #fff;
             text-align: center;
             padding: 120px 20px;
             margin-bottom: 40px;
+            animation: fadeIn 2s ease-in;
         }
 
         .hero h2 {
@@ -61,15 +63,32 @@
             font-weight: bold;
             transition: background 0.3s ease;
         }
-        
+
         .hero .btn:hover {
             background-color: #ff4500;
+        }
+
+        /* Profile Photo Section */
+        .profile-photo {
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+        }
+
+        .profile-photo img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            animation: slideInUp 1.5s ease;
         }
 
         /* Section Styling */
         .section {
             padding: 60px 0;
             text-align: center;
+            animation: fadeInUp 1.5s ease;
         }
 
         .section h3 {
@@ -86,7 +105,7 @@
             color: #555;
         }
 
-        /* Services */
+        /* Services and Testimonials */
         .services, .testimonials {
             display: flex;
             flex-wrap: wrap;
@@ -100,6 +119,7 @@
             padding: 30px;
             width: 30%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            animation: zoomIn 1s ease;
         }
 
         .service h4, .testimonial h4 {
@@ -117,6 +137,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             text-align: left;
+            animation: fadeIn 1s ease-out;
         }
 
         .contact-form label {
@@ -163,7 +184,7 @@
             margin-top: 40px;
             font-size: 0.9rem;
         }
-        
+
         /* Success Message Styling */
         .success-message {
             display: none;
@@ -171,6 +192,32 @@
             font-size: 1.2rem;
             color: #28a745;
             margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
         }
     </style>
 </head>
@@ -186,6 +233,11 @@
         <h2>Unleash Your Creative Potential</h2>
         <p>Take your vision to new heights with personalized coaching that brings out your best self.</p>
         <a href="#contact" class="btn">Book Your Free Discovery Call</a>
+    </div>
+
+    <!-- Profile Photo -->
+    <div class="profile-photo">
+        <img src="your-photo.jpg" alt="Maia Buljeta-Fuchs">
     </div>
 
     <!-- About Section -->
@@ -223,46 +275,37 @@
             </div>
             <div class="testimonial">
                 <h4>"Unwavering Support"</h4>
-                <p>“Maia helped me navigate challenges with patience and encouragement.” - Sarah K.</p>
+                <p>“Maia helped me navigate challenges with patience and a deep understanding of my goals.” - Jamie R.</p>
             </div>
             <div class="testimonial">
-                <h4>"A Real Partner"</h4>
-                <p>“Working with Maia has been invaluable in my creative journey. She’s insightful and truly invested.” - Mark L.</p>
+                <h4>"Newfound Confidence"</h4>
+                <p>“I’m creating more authentically than ever before, thanks to Maia's coaching.” - Casey L.</p>
             </div>
         </div>
     </div>
 
-    <!-- Contact Section -->
+    <!-- Contact Form Section -->
     <div class="container section" id="contact">
         <h3>Contact Me</h3>
-        <form action="https://formsubmit.co/maiabuljeta@gmail.com" method="POST" class="contact-form" onsubmit="showSuccessMessage(event)">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
-        <div class="success-message" id="success-message">
-            Thank you! Your message has been sent successfully.
+        <div class="contact-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
+        <p class="success-message">Thank you for your message! I will be in touch soon.</p>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Maia Buljeta-Fuchs | Creative Coach. All Rights Reserved.</p>
+        <p>Maia Buljeta-Fuchs | ©2024 All Rights Reserved</p>
     </footer>
 
-    <script>
-        function showSuccessMessage(event) {
-            event.preventDefault();
-            document.getElementById('success-message').style.display = 'block';
-            document.querySelector('.contact-form').reset();
-        }
-    </script>
 </body>
 </html>
+
