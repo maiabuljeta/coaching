@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maia Buljeta-Fuchs | Creative Coach</title>
+    <style>
+        /* CSS Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?creative,coaching') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #ff6347;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section p {
+            max-width: 700px;
+            margin: 10px auto;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .services, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .service, .testimonial {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h4, .testimonial h4 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Maia Buljeta-Fuchs | Creative Coach</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Transform Your Creative Vision into Reality</h2>
+        <p>Unlock your potential, break through creative blocks, and build a life of meaning and fulfillment with personalized coaching that understands the soul of creativity.</p>
+        <a href="#contact" class="btn">Book Your Free Discovery Call</a>
+    </div>
+
+    <!-- About Section -->
+    <div class="container section">
+        <h3>About Me</h3>
+        <p>I'm Maia, a creative coach dedicated to helping you find your voice, overcome obstacles, and cultivate a fulfilling creative life. With a background in filmmaking and transformative storytelling, I bring practical strategies and emotional insight to help you excel.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container section" id="services">
+        <h3>What I Offer</h3>
+        <div class="services">
+            <div class="service">
+                <h4>Overcome Creative Blocks</h4>
+                <p>Get to the root of what's holding you back and find powerful strategies to break through barriers, cultivate joy, and achieve clarity.</p>
+            </div>
+            <div class="service">
+                <h4>Boost Your Confidence</h4>
+                <p>Gain the confidence to take creative risks and make impactful decisions, both in your work and personal life.</p>
+            </div>
+            <div class="service">
+                <h4>Goal Setting & Accountability</h4>
+                <p>Set meaningful goals and create actionable steps, all while staying motivated and accountable to your own creative vision.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="container section" id="testimonials">
+        <h3>What My Clients Say</h3>
+        <div class="testimonials">
+            <div class="testimonial">
+                <h4>“Life-Changing Insights”</h4>
+                <p>"Maia's coaching helped me find clarity and purpose. I never thought I could overcome my blocks and feel so free creatively." - Alex T.</p>
+            </div>
+            <div class="testimonial">
+                <h4>“Unmatched Support”</h4>
+                <p>"With Maia’s guidance, I finally feel like I can achieve my goals. Her support and encouragement are truly invaluable." - Sarah K.</p>
+            </div>
+            <div class="testimonial">
+                <h4>“A True Partner in My Growth”</h4>
+                <p>"Working with Maia was one of the best decisions I made for my creativity and career. I recommend her to anyone seeking genuine growth." - Mark L.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container section" id="contact">
+        <h3>Contact Me</h3>
+        <form action="mailto:maiabuljeta@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Maia Buljeta-Fuchs | Creative Coach. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
