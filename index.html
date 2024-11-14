@@ -3,149 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maia Buljeta-Fuchs | Creative Coaching That Breaks Boundaries</title>
+    <title>Maia Buljeta-Fuchs | Creative Coach</title>
     <style>
         /* Reset */
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
 
         /* Body */
-        body { background: #f3f3f3; color: #333; line-height: 1.6; }
+        body { background: #ffffff; color: #333; line-height: 1.7; overflow-x: hidden; }
 
         /* Header */
         header {
-            background: linear-gradient(135deg, #000000, #222); color: #fff; padding: 2rem;
-            text-align: center; font-size: 1.8rem; font-weight: bold;
+            background: #333; color: #fff; padding: 2rem;
+            text-align: center; font-size: 2rem; font-weight: bold; letter-spacing: 1.5px;
+            text-transform: uppercase;
         }
 
         /* Hero Section */
         .hero {
-            background: rgba(0, 0, 0, 0.7) url('https://source.unsplash.com/1600x900/?creativity,motivation') center/cover no-repeat;
-            color: #fff; text-align: center; padding: 100px 20px; position: relative; margin-bottom: 30px;
+            background: url('https://source.unsplash.com/1600x900/?creative,art') center/cover no-repeat;
+            color: #fff; text-align: center; padding: 120px 20px; position: relative;
+            display: flex; flex-direction: column; align-items: center; gap: 1rem;
         }
-        .hero h2 { font-size: 3rem; font-weight: bold; margin-bottom: 15px; }
-        .hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto 30px; }
+        .hero h2 { font-size: 3.5rem; font-weight: 800; margin-bottom: 15px; line-height: 1.2; }
+        .hero p { font-size: 1.4rem; max-width: 800px; margin: 0 auto 30px; font-weight: 300; }
         .hero .btn {
-            padding: 15px 30px; font-size: 1.2rem; background-color: #ff4500; color: #fff;
-            text-decoration: none; border-radius: 5px; transition: background 0.3s ease;
+            padding: 15px 40px; font-size: 1.2rem; background-color: #ff4500; color: #fff;
+            text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s ease;
         }
-        .hero .btn:hover { background-color: #ff6347; }
+        .hero .btn:hover { background-color: #e63946; }
 
         /* Profile Photo */
         .profile-photo {
-            display: flex; justify-content: center; margin-top: -90px;
+            display: flex; justify-content: center; margin-top: -90px; overflow: hidden;
         }
         .profile-photo img {
-            width: 180px; height: 180px; border-radius: 50%; border: 4px solid #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            width: 200px; height: 200px; border-radius: 50%; border: 6px solid #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); object-fit: cover;
         }
 
         /* Main Sections */
-        .section {
-            padding: 60px 20px; text-align: center;
-        }
+        .section { padding: 60px 20px; text-align: center; max-width: 900px; margin: 0 auto; }
+
         .section h3 {
-            font-size: 2.5rem; margin-bottom: 20px; font-weight: bold; color: #222;
+            font-size: 2.8rem; margin-bottom: 20px; font-weight: bold; color: #111;
+            letter-spacing: 0.5px; text-transform: uppercase;
         }
-        .section p { max-width: 800px; margin: 10px auto; font-size: 1.1rem; color: #555; }
+        .section p { max-width: 700px; margin: 10px auto; font-size: 1.2rem; color: #555; font-weight: 300; }
 
         /* Services */
-        .services { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-around; }
+        .services { display: flex; flex-direction: column; gap: 30px; margin-top: 20px; }
         .service {
-            background: #fff; border-radius: 10px; padding: 20px; width: 30%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: #f9f9f9; border-radius: 10px; padding: 30px; width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); text-align: left;
+            font-size: 1.1rem; font-weight: 300;
         }
-        .service h4 { font-size: 1.5rem; margin-bottom: 15px; color: #333; }
-        
-        /* Email Contact */
-        .contact-info { text-align: center; margin-top: 20px; font-size: 1.2rem; color: #444; }
+        .service h4 {
+            font-size: 1.6rem; margin-bottom: 10px; color: #e63946; font-weight: 600;
+        }
+
+        /* Contact */
+        .contact {
+            background: #111; color: #fff; padding: 50px 20px; text-align: center;
+        }
+        .contact h3 { color: #ff6347; }
+        .contact p { font-size: 1.2rem; margin-bottom: 10px; }
+        .contact a {
+            color: #fff; font-size: 1.1rem; text-decoration: underline; transition: color 0.3s ease;
+        }
+        .contact a:hover { color: #ff6347; }
 
         /* Footer */
-        footer { background: #111; color: #fff; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9rem; }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <h1>Maia Buljeta-Fuchs | Creative Coaching That Breaks Boundaries</h1>
+        Maia Buljeta-Fuchs | Creative Coach
     </header>
 
     <!-- Hero Section -->
-    <div class="hero">
-        <h2>Unlock Your Creative Potential</h2>
-        <p>Free yourself from the myths of creativity. Challenge your mind. Create beyond limits with insights and coaching designed to shatter conventional thinking.</p>
-        <a href="#contact" class="btn">Claim Your Free 30-Minute Consultation</a>
-    </div>
+    <section class="hero">
+        <h2>Break the Rules. Discover Your True Creative Voice.</h2>
+        <p>More than coaching – it’s a transformation. Creativity is not a skill to be taught; it's a force to uncover.</p>
+        <a href="#contact" class="btn">Free 30-Minute Discovery Call</a>
+    </section>
 
     <!-- Profile Photo -->
     <div class="profile-photo">
-        <img src="your-photo.jpg" alt="Maia Buljeta-Fuchs" style="object-fit: cover;">
+        <img src="your-photo.jpg" alt="Maia Buljeta-Fuchs">
     </div>
 
     <!-- About Section -->
-    <div class="section">
-        <h3>About Me</h3>
-        <p>I'm Maia, a creative coach with a bold mission: to reveal and unlock the unique pathways that bring creative breakthroughs, even when everything else has failed. With years of experience in creative fields and personal coaching, I help you tap into innovative strategies that transform your approach to creativity.</p>
-    </div>
+    <section class="section">
+        <h3>About Maia</h3>
+        <p>I’m Maia, and I believe that true creativity can’t be packaged, mimicked, or faked. With years of experience across creative industries, I’ve seen firsthand that most creative advice keeps people stuck. My coaching uncovers the unique forces that drive your creativity. We’ll go deeper than “inspiration” and find your true creative edge.</p>
+    </section>
 
     <!-- Services Section -->
-    <div class="section">
-        <h3>What I Offer</h3>
+    <section class="section">
+        <h3>How I Help Creatives Thrive</h3>
         <div class="services">
             <div class="service">
-                <h4>Break Through Creative Blocks</h4>
-                <p>Most believe you need inspiration. I’ll show you that action comes first, fueling inspiration in ways you never expected.</p>
+                <h4>Challenge What You Know About Creativity</h4>
+                <p>Creativity isn’t about waiting for inspiration. It’s about uncovering what’s holding you back and creating pathways to break through. I’ll help you shatter habits that stifle your true potential.</p>
             </div>
             <div class="service">
-                <h4>Redefine Confidence</h4>
-                <p>Creativity isn’t about being fearless. It’s about working despite fear. Build resilience and master the art of moving forward.</p>
+                <h4>Embrace Fear as a Creative Tool</h4>
+                <p>Fear doesn’t block creativity; it guides it. Together, we’ll harness your doubts and use them as stepping stones to authenticity, originality, and real growth in your creative work.</p>
             </div>
             <div class="service">
-                <h4>Set Meaningful Goals</h4>
-                <p>Forget hustle culture. Discover a tailored approach that lets you create sustainably without burning out.</p>
+                <h4>Set Intentions, Not Goals</h4>
+                <p>Forget about forced productivity. Creativity is not a race. My approach is about setting meaningful intentions that drive you to create with purpose and stay connected to your vision.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Testimonials Section -->
-    <div class="section">
-        <h3>Client Success Stories</h3>
-        <div class="services">
-            <div class="service">
-                <h4>"Game-Changing Insights"</h4>
-                <p>“Maia helped me see my creativity in a whole new way. Her approach is fresh and unique, and I’ve grown both personally and creatively.” - Alex T.</p>
-            </div>
-            <div class="service">
-                <h4>"Support Like No Other"</h4>
-                <p>“Maia’s coaching cuts through fluff. She helped me get clear on what was holding me back and provided real solutions.” - Jamie R.</p>
-            </div>
-            <div class="service">
-                <h4>"Confidence Redefined"</h4>
-                <p>“Maia's approach helped me embrace my own style of creativity, and I feel more inspired and authentic than ever before.” - Casey L.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="section" id="contact">
-        <h3>Contact Me</h3>
-        <p>Ready to dive into a creative breakthrough? Reach out directly to start a conversation:</p>
-        <div class="contact-info">
-            <p>Email me at: <a href="mailto:maiabuljeta@gmail.com">maiabuljeta@gmail.com</a></p>
-        </div>
-    </div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h3>Get In Touch</h3>
+        <p>If you’re ready to dive into a new level of creativity, reach out directly.</p>
+        <p>Email: <a href="mailto:maiabuljeta@gmail.com">maiabuljeta@gmail.com</a></p>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>Maia Buljeta-Fuchs | ©2024 All Rights Reserved</p>
+        Maia Buljeta-Fuchs | ©2024 All Rights Reserved
     </footer>
 
 </body>
 </html>
+
 
 
